@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>market.aspro-demo</title>
     <script src="js/test.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,12 +37,14 @@
                 <div class="contacts_item contacts_item_left">
                     <div class="logo"><a href="#"></a><img src="../tests/assets/images/logo_b2b.jpg" width="150px">
                     </div>
-                    <div class="phone_number"><span uk-icon="icon: receiver"></span>8(000)0000000</div>
+                    <div class="phone_number"><span uk-icon="icon: receiver" class="phone_number_icon"></span>8(000)0000000
+                    </div>
                 </div>
                 <div class="contacts_item contacts_item_middle">
                     <div class="contact_us">
-                        <button class="uk-button-default type=" button
-                        " uk-toggle="target: #modal-example""">Свяжитесь с нами</button>
+                        <button class="uk-button-default uk-button-small" type="button"
+                                uk-toggle="target: #modal-example">Свяжитесь с нами
+                        </button>
                         <div id="modal-example" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">Приветствуем на нашем сайте</h2>
@@ -54,18 +55,20 @@
                     </div>
                 </div>
                 <div class="contacts_item contacts_item_right">
-                    <div class="favorites">
-                        <span uk-icon="icon: file-edit"></span>
-                        <div class="favorites_item">
-                            <p><a href="#">Избранное</a></p>
-                            <p>Товаров (0)</p>
+                    <div class="goods">
+                        <div class="favorites">
+                            <span uk-icon="icon: file-edit" class="menu_icon"></span>
+                            <div class="favorites_item">
+                                <p><a href="#">Избранное</a></p>
+                                <p>Товаров (0)</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="busket">
-                        <span uk-icon="icon: cart"></span>
-                        <div class="busket_item">
-                            <p><a href="#">Корзина</a></p>
-                            <p>Ваша корзина пуста</p>
+                        <div class="busket">
+                            <span uk-icon="icon: cart" class="menu_icon"></span>
+                            <div class="busket_item">
+                                <p><a href="#">Корзина</a></p>
+                                <p>Ваша корзина пуста</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,7 +79,7 @@
         <div class="menu">
             <div class="uk-flex uk-flex-row uk-flex-between uk-flex-middle nav_menu">
                 <div class="menu-item catalog">
-                    <h5><span uk-icon="grid"></span>Каталог</h5>
+                    <span class="menu_list"><span uk-icon="grid" class="menu_list_icon"></span>Каталог</span>
                     <div class="uk-width-large" uk-dropdown>
                         <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
                             <div class="menu-item-list">
@@ -203,10 +206,10 @@
                     </div>
                 </div>
                 <div class="menu-item sale">
-                    <h5><span uk-icon="bolt"></span>Акции</h5>
+                    <span class="menu_list"><span uk-icon="bolt" class="menu_list_icon"></span>Акции</span>
                 </div>
                 <div class="menu-item servises">
-                    <h5>Услуги</h5>
+                    <span class="menu_list">Услуги</span>
                     <div class="uk-width-large" uk-dropdown>
                         <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
                             <div>
@@ -247,10 +250,10 @@
                     </div>
 
                 </div>
-                <div class="menu-item blogmenu-item "><h5>Блог</h5></div>
-                <div class="menu-item brands"><h5>Бренды</h5></div>
+                <div class="menu-item blogmenu-item "><span class="menu_list">Блог</span></div>
+                <div class="menu-item brands"><span class="menu_list">Бренды</span></div>
                 <div class="menu-item how_to_buy">
-                    <h5>Как купить</h5>
+                    <span class="menu_list">Как купить</span>
                     <div class="uk-width-large" uk-dropdown>
                         <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
                             <div>
@@ -266,7 +269,7 @@
                     </div>
                 </div>
                 <div class="menu-item company">
-                    <h5>Компания</h5>
+                    <span class="menu_list">Компания</span>
                     <div class="uk-width-large" uk-dropdown>
                         <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
                             <div>
@@ -293,10 +296,67 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu-item contacts"><h5>Контакты</h5></div>
+                <div class="menu-item contacts"><span class="menu_list">Контакты</span></div>
             </div>
         </div>
     </div>
+    <!-- <div class="uk-container container_slider">
+          <div class="container_slider_item">
+              <div uk-slider>
+                  <div class="uk-slider-container">
+                      <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m">
+                          <li>
+                              <div class="slider_text slider_text_slide1">
+                                  <span>Электроника</span>
+                                  <h2>Надежная техника</h2>
+                                  <span>Смартфоны, игровые приставки, телевизоры</span>
+                                  <button class="uk-button">Перейти в каталог</button>
+                              </div>
+                              <img src="../tests/assets/images/boy.png"  alt="boy">
+                          </li>
+                          <li>
+                             <div class="slider_text slider_text_slide2">
+                                  <div class="slider_text_item">
+                                      <span class="slider_text_hit">Хит</span>
+                                      <span class="slider_text_sale">Акция</span>
+                                  </div>
+                                  <h2>Портативная колонка Koralia</h2>
+                                  <span>Комфорт может быть стильным</span>
+                                  <button class="uk-button">Подробнее</button>
+                                  <button class="uk-button"><span uk-icon="cart"></span></button>
+                                  <button class="uk-button"><span uk-icon="heart"></span></button>
+                                  <button class="uk-button"><span uk-icon="more-vertical"></span></button>
+                              </div>
+                              <img src="../tests/assets/images/bird.png"  alt="bird">
+                          </li>
+                          <li><
+                              <div class="slider_text slider_text_slide3">
+                                  <span>Одежда</span>
+                                  <h2>Изящные образы на каждый день</h2>
+                                  <span>Комфорт может быть стильным</span>
+                                  <button class="button_slider">Женская одежда</button>
+                                  <button class="button_slider_3">Аксессуары</button>
+                              </div>
+                              <img src="../tests/assets/images/woman.png"  alt="woman">
+                          </li>
+                      </ul>
+                      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="special_goods">
+              <div class="special_goods_item special_goods_item_bike">
+                  <p>Велосипеды</p>
+                  <p>Трехколесный траспорт для начинающих</p>
+              </div>
+              <div class="special_goods_item special_goods_item_watches">
+                  <p>Часы</p>
+                  <p>Деталь стильного образа для мужчин и женщин</p>
+              </div>
+          </div>
+      </div> -->
 </div>
 </body>
 </html>
