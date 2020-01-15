@@ -187,12 +187,34 @@ body {
   width: 70%;
   height: 70vh;
   display: flex;
+  align-items: center;
   @media (max-width: 980px) {
     width: 100%;
   }
 
   & > div > ul > li {
     width: 100%;
+  }
+}
+
+.slide {
+  display: flex;
+  height: 70vh;
+
+
+  &_1 {
+    background: url("../../tests/assets/images/boy_fon.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &_2 {
+    background: url("../../tests/assets/images/bird_fon.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &_3 {
+    background: url("../../tests/assets/images/woman_fon.jpg") no-repeat;
+    background-size: cover;
   }
 
   &-text-block {
@@ -239,27 +261,6 @@ body {
         color: #ffffff;
       }
     }
-  }
-}
-
-.slide {
-  display: flex;
-  height: 70vh;
-
-
-  &_1 {
-    background: url("../../tests/assets/images/boy_fon.jpg") no-repeat;
-    background-size: cover;
-  }
-
-  &_2 {
-    background: url("../../tests/assets/images/bird_fon.jpg") no-repeat;
-    background-size: cover;
-  }
-
-  &_3 {
-    background: url("../../tests/assets/images/woman_fon.jpg") no-repeat;
-    background-size: cover;
   }
 }
 
