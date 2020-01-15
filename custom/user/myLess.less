@@ -69,7 +69,7 @@ body {
   }
 }
 
-.header-logo, .header-phone-number, .header-contact-us, .header-goods, .header-button {
+.header-logo, .header-phone-number, .header-contact-us, .header-goods, .header-button, .special-goods {
   cursor: pointer;
 }
 
@@ -159,64 +159,89 @@ body {
 .content {
 
   display: flex;
+  @media (max-width: 980px) {
+    flex-direction: column;
+  }
 }
 
 .slider {
   width: 70%;
-}
-
-.content__uk-slider-container {
   height: 70vh;
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+
+  & > div > ul > li {
+    width: 100%;
+  }
+
+  &-text-block {
+    width: 50%;
+    margin-left: 80px;
+    padding: 70px 0 65px 0;
+
+    &__item {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.428571429;
+      color: #9f9f9f;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 980px) {
+        height: 30vh;
+        width: 100%;
+      }
+    }
+  }
+
+  &-img {
+    background-size: contain;
+  }
+
+  &-button {
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #088c52;
+    border-color: #0aa360;
+    color: #ffffff;
+
+    &_m {
+      background-color: white;
+      color: #8d8d8d;
+
+      &:hover {
+        background-color: #088c52;
+        border-color: #0aa360;
+        color: #ffffff;
+      }
+    }
+  }
 }
 
-.content__uk-slider-container > ul > li {
-  width: 100%;
-}
-
-.container_slider_item {
-  margin: 0;
-}
-
-.slider_item {
-  width: 50%;
-  margin-left: 80px;
-  padding: 70px 0 65px 0;
-}
-
-.slider_text {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #9f9f9f;
-  min-height: 200px;
+.slide {
   display: flex;
-  flex-direction: column;
+  background-size: cover;
+
+  &_1 {
+    background: url("../../tests/assets/images/boy_fon.jpg");
+  }
+
+  &_2 {
+    background: url("../../tests/assets/images/bird_fon.jpg");
+  }
+
+  &_3 {
+    background: url("../../tests/assets/images/woman_fon.jpg");
+  }
 }
 
-.slider_text_item {
+.stock {
   display: inline-block;
 }
 
-.slider-img {
-  background-size: contain;
-}
-
-.first-slide, .second-slide, third-slide {
-  display: flex;
-  background-size: cover;
-}
-
-.first-slide {
-  background: url("../../tests/assets/images/boy_fon.jpg");
-}
-
-.second-slide {
-  background: url("../../tests/assets/images/bird_fon.jpg");
-}
-
-.third-slide {
-  background: url("../../tests/assets/images/woman_fon.jpg");
-}
 
 .hit, .sale {
   padding: 5px;
@@ -234,69 +259,53 @@ body {
   background-color: #eaa700;
 }
 
-.slider_button, .slider_button_2 {
-  font-size: 10px;
-  margin: 5px;
-  padding: 5px 15px;
-  border-radius: 3px;
-}
-
-.slider_button, .slider_button_2:hover {
-  background-color: #088c52;
-  border-color: #0aa360;
-  color: #ffffff;
-}
-
-.slider_button_2 {
-  background-color: white;
-}
 
 .special-goods {
   width: 30%;
   display: flex;
   flex-direction: column;
   background-color: #dfdfdf;
-  cursor: pointer;
   overflow: hidden;
-}
+  @media (max-width: 980px) {
+    height: 50vh;
+    width: 100%;
+    flex-direction: row;
+  }
 
-.special-goods__item {
-  height: 50%;
-  background-position: center;
-  background-size: cover;
-  transition: all 1s ease 0s;
-}
 
-.sgi {
-  color: #fff;
-  font-size: medium;
-  margin: 70px 10px 40px 40px;
-}
+  &__item {
+    height: 50%;
+    background-position: center;
+    background-size: contain;
+    transition: all 2s;
+    flex: 1 1 auto;
 
-.sgi > a, .slider_text > a {
-  color: #ccc;
-  font-size: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+  }
+
+  &-promo {
+    color: #fff;
+    font-size: medium;
+    margin: 70px 10px 40px 40px;
+
+
+    & > a, .slider_text > a {
+      color: #ccc;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .bike {
-  background: url("../../tests/assets/images/bike.jpg");
+  background: url("../../tests/assets/images/bike.jpg") no-repeat;
 }
 
 .watches {
-  background: url("../../tests/assets/images/watches.jpg");
+  background: url("../../tests/assets/images/watches.jpg") no-repeat;
 }
-
-.bike, .watches {
-  background-position: center;
-  background-size: cover;
-  transition: all 2s;
-}
-
-.bike:hover, .watches:hover {
-  transform: scale(1.2, 1.2);
-}
-
 
 

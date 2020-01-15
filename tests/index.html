@@ -297,18 +297,18 @@
 </div>
 <div class="content">
     <div class="slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-        <div class="content__uk-slider-container">
-            <ul class="uk-slider-items uk-width-1-1 uk-visible-toggle">
+        <div class="slider__item uk-slider-container">
+            <ul class="uk-slider-items uk-width-1-1">
                 <li>
-                    <div class="first-slide">
-                        <div class="slider_item">
-                            <div class="slider_text slider_text_slide1">
+                    <div class="slide slide_1">
+                        <div class="slider-text-block">
+                            <div class="slider-text-block__item">
                                 <a>Электроника</a>
                                 <h2>Надежная техника</h2>
                                 <span>Смартфоны, игровые приставки, телевизоры</span>
                             </div>
                             <div>
-                                <button class="uk-button slider_button">Перейти в каталог</button>
+                                <button class="uk-button slider-button">Перейти в каталог</button>
                             </div>
                         </div>
                         <div class="slider-img">
@@ -317,10 +317,10 @@
                     </div>
                 </li>
                 <li>
-                    <div class="second-slide">
-                        <div class="slider_item">
-                            <div class="slider_text slider_text_slide2">
-                                <div class="slider_text_item">
+                    <div class="slide slide_2">
+                        <div class="slider-text-block">
+                            <div class="slider-text-block__item">
+                                <div class="stock">
                                     <span class="hit">Хит</span>
                                     <span class="sale">Акция</span>
                                 </div>
@@ -328,10 +328,13 @@
                                 <span>Комфорт может быть стильным</span>
                             </div>
                             <div>
-                                <button class="uk-button slider_button">Подробнее</button>
-                                <button class="uk-button slider_button_2"><span uk-icon="cart"></span></button>
-                                <button class="uk-button slider_button_2"><span uk-icon="heart"></span></button>
-                                <button class="uk-button slider_button_2"><span uk-icon="more-vertical"></span></button>
+                                <button class="uk-button slider-button">Подробнее</button>
+                                <button class="uk-button slider-button slider-button_m"><span uk-icon="cart"></span>
+                                </button>
+                                <button class="uk-button slider-button slider-button_m"><span uk-icon="heart"></span>
+                                </button>
+                                <button class="uk-button slider-button slider-button_m"><span
+                                        uk-icon="more-vertical"></span></button>
                             </div>
                         </div>
                         <div class="slider-img">
@@ -340,16 +343,16 @@
                     </div>
                 </li>
                 <li>
-                    <div class="third-slide">
-                        <div class="slider_item">
-                            <div class="slider_text slider_text_slide3">
+                    <div class="slide slide_3">
+                        <div class="slider-text-block">
+                            <div class="slider-text-block__item">
                                 <a>Одежда</a>
                                 <h2>Изящные образы на каждый день</h2>
                                 <span>Комфорт может быть стильным</span>
                             </div>
                             <div>
-                                <button class="uk-button slider_button">Женская одежда</button>
-                                <button class="uk-button slider_button_2">Аксессуары</button>
+                                <button class="uk-button slider-button">Женская одежда</button>
+                                <button class="uk-button slider-button slider-button_m">Аксессуары</button>
                             </div>
                         </div>
                         <div class="slider-img">
@@ -373,13 +376,13 @@
     </div>
     <div class="special-goods">
         <div class="special-goods__item bike">
-            <div class="sgi">
+            <div class="special-goods-promo">
                 <a>Велосипеды</a>
                 <p>Трехколесный траспорт для начинающих гонщиков</p>
             </div>
         </div>
         <div class="special-goods__item watches">
-            <div class="sgi">
+            <div class="special-goods-promo">
                 <a>Часы</a>
                 <p>Деталь стильного образа для мужчин и женщин</p>
             </div>
