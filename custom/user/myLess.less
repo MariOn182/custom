@@ -225,7 +225,7 @@ body {
 
   &-text-block {
     width: 50%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 10%;
     padding: 70px 0 65px 0;
     align-self: center;
@@ -235,13 +235,26 @@ body {
       font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-size: 14px;
       line-height: 1.428571429;
-      color: #9f9f9f;
+      color: #535353;
       min-height: 200px;
       display: flex;
       flex-direction: column;
       @media (max-width: 980px) {
         height: 30vh;
         width: 100%;
+      }
+
+      & > h5 {
+        text-transform: uppercase;
+      }
+
+      & > h1 {
+        color: black;
+        font-weight: 200;
+      }
+
+      & > span {
+        font-size: 17px;
       }
     }
   }
@@ -273,27 +286,27 @@ body {
   }
 }
 
-.stock {
+.stock-block {
   display: inline-block;
+  @media (max-width: 740px) {
+    display: none;
+  }
+
+  &__item {
+    padding: 5px;
+    border-radius: 2px;
+    color: black;
+    background-color: #eaa700;
+
+    &_m {
+      padding: 5px;
+      border-radius: 2px;
+      color: white;
+      background-color: #0f7ae5;
+      margin-right: 5px;
+    }
+  }
 }
-
-
-.hit, .sale {
-  padding: 5px;
-  border-radius: 2px;
-}
-
-.hit {
-  color: white;
-  background-color: #0f7ae5;
-  margin-right: 5px;
-}
-
-.sale {
-  color: black;
-  background-color: #eaa700;
-}
-
 
 .special-goods {
   width: 25%;
@@ -345,4 +358,80 @@ body {
   background-size: contain;
 }
 
+.balance-block {
+  display: flex;
+  @media (max-width: 740px) {
+    display: none;
+  }
+
+  &-stars {
+    display: inline;
+  }
+
+  &-balance {
+    margin-left: 20px;
+    display: flex;
+    color: rgba(0, 173, 0, 0.9);
+
+    & > p {
+      margin: 0;
+      font-weight: lighter;
+      background-image: linear-gradient(to right, rgba(0, 173, 0, 0.9) 50%, transparent 50%);
+      background-position: 0 1.04em;
+      background-repeat: repeat-x;
+      background-size: 6px 3px;
+    }
+  }
+}
+
+.timer-block {
+  background-color: #dfdfdf;
+  height: 30px;
+  width: 150px;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-left: 10px;
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+
+    &_m {
+      color: rgba(168, 168, 168, 0.68);
+      font-weight: 200;
+      font-size: 18px;
+      text-decoration: line-through;
+    }
+  }
+}
+
+.benefit-block {
+  padding: 3px;
+  margin-right: 10px;
+  border-radius: 2px;
+  display: flex;
+  font-size: 12px;
+  color: black;
+  background-color: #eaa700;
+  @media (max-width: 740px) {
+    display: none;
+  }
+
+  &__item {
+    margin-right: 10px;
+
+    &_m {
+      background-color: #fff8db;
+    }
+
+  }
+
+}
 
