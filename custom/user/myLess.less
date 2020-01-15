@@ -359,7 +359,9 @@ body {
 }
 
 .balance-block {
+  margin-bottom: 15px;
   display: flex;
+  align-items: center;
   @media (max-width: 740px) {
     display: none;
   }
@@ -386,10 +388,26 @@ body {
 
 .timer-block {
   background-color: #dfdfdf;
-  height: 30px;
+  height: 40px;
   width: 150px;
+  padding: 3px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
   @media (max-width: 740px) {
     display: none;
+  }
+
+  &__item {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bold;
+
+    &_m {
+      font-size: 10px;
+      font-weight: 100;
+      color: rgba(135, 135, 135, 0.68);
+    }
   }
 }
 
@@ -404,7 +422,7 @@ body {
     font-weight: bold;
 
     &_m {
-      color: rgba(168, 168, 168, 0.68);
+      color: rgba(135, 135, 135, 0.68);
       font-weight: 200;
       font-size: 18px;
       text-decoration: line-through;
@@ -415,6 +433,7 @@ body {
 .benefit-block {
   padding: 3px;
   margin-right: 10px;
+  margin-bottom: 15px;
   border-radius: 2px;
   display: flex;
   font-size: 12px;
