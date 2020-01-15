@@ -77,7 +77,7 @@ body {
   }
 }
 
-.header-logo, .header-phone-number, .header-contact-us, .header-goods, .header-button, .special-goods, .menu_list:hover, .menu-item-list > ul:hover, .menu-item-list > ul > li:hover {
+.header-logo, .header-phone-number, .header-contact-us, .header-goods, .header-button, .special-goods, .menu-list:hover, .menu-item-list > ul:hover, .menu-item-list > ul > li:hover {
   cursor: pointer;
 }
 
@@ -164,7 +164,6 @@ body {
 
   &:hover {
     color: #088c52;
-    cursor: pointer;
   }
 
   &-icon {
@@ -246,18 +245,21 @@ body {
 .slide {
   display: flex;
   height: 70vh;
-  background: no-repeat contain;
+
 
   &_1 {
-    background: url("../../tests/assets/images/boy_fon.jpg");
+    background: url("../../tests/assets/images/boy_fon.jpg") no-repeat;
+    background-size: cover;
   }
 
   &_2 {
-    background: url("../../tests/assets/images/bird_fon.jpg");
+    background: url("../../tests/assets/images/bird_fon.jpg") no-repeat;
+    background-size: cover;
   }
 
   &_3 {
-    background: url("../../tests/assets/images/woman_fon.jpg");
+    background: url("../../tests/assets/images/woman_fon.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
