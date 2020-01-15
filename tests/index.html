@@ -7,13 +7,12 @@
     <title>market.aspro-demo</title>
     <script src="js/test.js"></script>
 </head>
-
 <body>
-<div class="wrapper">
-    <div class="shadow"></div>
-    <div class="uk-navbar-container">
-        <nav class="uk-container" uk-navbar>
-            <div class="uk-navbar-left menu-block">
+<div class="expand uk-container-expand"></div>
+<div class="header">
+    <div class="header-top">
+        <nav uk-navbar>
+            <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <li><a href="#">Условия оплаты</a></li>
                     <li><a href="#">Доставка</a></li>
@@ -23,7 +22,7 @@
                     <li><a href="#">Вопрос-ответ</a></li>
                 </ul>
             </div>
-            <div class="uk-navbar-right user-block">
+            <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <li><a href="#" class="entry">Вход</a></li>
                     <li class="registration"><a href="#">Регистрация</a></li>
@@ -31,332 +30,380 @@
             </div>
         </nav>
     </div>
-    <div class="uk-container container_header">
-        <div class="header">
-            <div class="contacts">
-                <div class="contacts_item contacts_item_left">
-                    <div class="logo"><a href="#"></a><img src="../tests/assets/images/logo_b2b.jpg" width="150px">
-                    </div>
-                    <div class="phone_number"><span uk-icon="icon: receiver" class="phone_number_icon"></span>8(000)0000000
-                    </div>
-                </div>
-                <div class="contacts_item contacts_item_middle">
-                    <div class="contact_us">
-                        <button class="uk-button-default uk-button-small" type="button"
-                                uk-toggle="target: #modal-example">Свяжитесь с нами
-                        </button>
-                        <div id="modal-example" uk-modal>
-                            <div class="uk-modal-dialog uk-modal-body">
-                                <h2 class="uk-modal-title">Приветствуем на нашем сайте</h2>
-                                <p>Для получения подробной информации позвоните по номеру 8(000)000 00 00 или напишите
-                                    info@maill.ru</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contacts_item contacts_item_right">
-                    <div class="goods">
-                        <div class="favorites">
-                            <span uk-icon="icon: file-edit" class="menu_icon"></span>
-                            <div class="favorites_item">
-                                <p><a href="#">Избранное</a></p>
-                                <p>Товаров (0)</p>
-                            </div>
-                        </div>
-                        <div class="busket">
-                            <span uk-icon="icon: cart" class="menu_icon"></span>
-                            <div class="busket_item">
-                                <p><a href="#">Корзина</a></p>
-                                <p>Ваша корзина пуста</p>
-                            </div>
-                        </div>
+    <div class="header-middle">
+        <div class="header-middle__item header-middle__item-left">
+            <div class="header-logo"><a href="#"></a><img src="../tests/assets/images/logo_b2b.jpg" width="150px">
+            </div>
+            <div class="header-phone-number"><span uk-icon="icon: receiver" class="header-phone-number-icon"></span><a
+                    href="tel:80000000000"> 8(000)0000000</a>
+            </div>
+        </div>
+        <div class="header-middle__item header-middle__item-middle">
+            <div class="header-contact-us">
+                <button class="header-button uk-button-default uk-button-small" type="button"
+                        uk-toggle="target: #modal-example">Свяжитесь с нами
+                </button>
+                <div id="modal-example" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                        <h2 class="uk-modal-title">Приветствуем на нашем сайте</h2>
+                        <p>Для получения подробной информации позвоните по номеру <a href="tel:80000000000">
+                            8(000)0000000</a> или напишите <a href="mailto:info@maill.ru">
+                            info@maill.ru</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="uk-container container_menu">
-        <div class="menu">
-            <div class="uk-flex uk-flex-row uk-flex-between uk-flex-middle nav_menu">
-                <div class="menu-item catalog">
-                    <span class="menu_list"><span uk-icon="grid" class="menu_list_icon"></span>Каталог</span>
-                    <div class="uk-width-large" uk-dropdown>
-                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Электроника</li>
-                                    <li><a href="#">Телевизоры</a></li>
-                                    <li><a href="#">Аудиотехника</a></li>
-                                    <li><a href="#">Игры и приставки</a></li>
-                                    <li><a href="#">Телефоны</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Мебель</li>
-                                    <li><a href="#">Диваны</a></li>
-                                    <li><a href="#">Шкафы</a></li>
-                                    <li><a href="#">Столы</a></li>
-                                    <li><a href="#">Стулья</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Обувь</li>
-                                    <li><a href="#">Мужская обувь</a></li>
-                                    <li><a href="#">Женская обувь</a></li>
-                                    <li><a href="#">Обувь для мальчиков</a></li>
-                                    <li><a href="#">Обувь для девочек</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Одежда</li>
-                                    <li><a href="#">Женская одежда</a></li>
-                                    <li><a href="#">Мужская одежда</a></li>
-                                    <li><a href="#">Одежда для подростков</a></li>
-                                    <li><a href="#">Одежда для новорожденных</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Бижутерия и ювелирные изделия</li>
-                                    <li><a href="#">Броши</a></li>
-                                    <li><a href="#">Серьги</a></li>
-                                    <li><a href="#">Браслеты</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Сантехника</li>
-                                    <li><a href="#">Ванны</a></li>
-                                    <li><a href="#">Душевые кабины</a></li>
-                                    <li><a href="#">Смесители</a></li>
-                                    <li><a href="#">Унитазы</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Спортивные товары</li>
-                                    <li><a href="#">Мячи</a></li>
-                                    <li><a href="#">Экипировки</a></li>
-                                    <li><a href="#">Гантели</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Освещение</li>
-                                    <li><a href="#">Люстры</a></li>
-                                    <li><a href="#">Светильники</a></li>
-                                    <li><a href="#">Фонари</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Товары для дома и дачи</li>
-                                    <li><a href="#">Текстиль</a></li>
-                                    <li><a href="#">Декор</a></li>
-                                    <li><a href="#">Инвентарь</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Часы</li>
-                                    <li><a href="#">Мужские часы</a></li>
-                                    <li><a href="#">Женские часы</a></li>
-                                    <li><a href="#">Детские часы</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Строительные материалы</li>
-                                    <li><a href="#">Обои</a></li>
-                                    <li><a href="#">Клеи</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Косметика и парфюмерия</li>
-                                    <li><a href="#">Губные помады</a></li>
-                                    <li><a href="#">Парфюмерия</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Игрушки</li>
-                                    <li><a href="#">Развивающие игрушки</a></li>
-                                    <li><a href="#">Мягкие игрушки</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Велосипеды</li>
-                                    <li><a href="#">Взрослые велосипеды</a></li>
-                                    <li><a href="#">Детские велосипеды</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu-item-list">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Климатическая техника</li>
-                                    <li><a href="#">Кондиционеры</a></li>
-                                    <li><a href="#">Бризеры</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <div class="header-middle__item header-middle__item-right">
+            <div class="header-goods">
+                <span uk-icon="icon: file-edit" class="header-goods-icon"></span>
+                <div class="header-goods__item">
+                    <p><a href="#">Избранное</a></p>
+                    <p>Товаров (0)</p>
                 </div>
-                <div class="menu-item sale">
-                    <span class="menu_list"><span uk-icon="bolt" class="menu_list_icon"></span>Акции</span>
+            </div>
+            <div class="header-goods">
+                <span uk-icon="icon: cart" class="header-goods-icon"></span>
+                <div class="header-goods__item busket">
+                    <p><a href="#">Корзина</a></p>
+                    <p>Ваша корзина пуста</p>
                 </div>
-                <div class="menu-item servises">
-                    <span class="menu_list">Услуги</span>
-                    <div class="uk-width-large" uk-dropdown>
-                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li><a href="#">Сервисные службы</a></li>
-                                    <div class="uk-width-large" uk-dropdown="pos:right">
-                                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-                                            <div>
-                                                <ul class="uk-nav uk-dropdown-nav">
-                                                    <li><a href="#">Сборка мебели</a></li>
-                                                    <li class="uk-nav-divider"></li>
-                                                    <li><a href="#">Настройка электроники</a></li>
-                                                    <li class="uk-nav-divider"></li>
-                                                    <li><a href="#">Монтаж кондиционеров</a></li>
-                                                    <li class="uk-nav-divider"></li>
-                                                    <li><a href="#">Установка сантехники</a></li>
-                                                    <li class="uk-nav-divider"></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Дополнительные услуги</a></li>
-                                    <div class="uk-width-large" uk-dropdown="pos:right">
-                                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-                                            <div>
-                                                <ul class="uk-nav uk-dropdown-nav">
-                                                    <li><a href="#">Утилизация техники</a></li>
-                                                    <li class="uk-nav-divider"></li>
-                                                    <li><a href="#">Кредитование</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="menu-item blogmenu-item "><span class="menu_list">Блог</span></div>
-                <div class="menu-item brands"><span class="menu_list">Бренды</span></div>
-                <div class="menu-item how_to_buy">
-                    <span class="menu_list">Как купить</span>
-                    <div class="uk-width-large" uk-dropdown>
-                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li><a href="#">Условия оплаты</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Условия доставки</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Гарантия на товар</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item company">
-                    <span class="menu_list">Компания</span>
-                    <div class="uk-width-large" uk-dropdown>
-                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li><a href="#">О компании</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Новости</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Команда</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Карьера</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Контакты</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Партнеры</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Лицензии</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Документы</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item contacts"><span class="menu_list">Контакты</span></div>
             </div>
         </div>
     </div>
-    <!-- <div class="uk-container container_slider">
-          <div class="container_slider_item">
-              <div uk-slider>
-                  <div class="uk-slider-container">
-                      <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m">
-                          <li>
-                              <div class="slider_text slider_text_slide1">
-                                  <span>Электроника</span>
-                                  <h2>Надежная техника</h2>
-                                  <span>Смартфоны, игровые приставки, телевизоры</span>
-                                  <button class="uk-button">Перейти в каталог</button>
-                              </div>
-                              <img src="../tests/assets/images/boy.png"  alt="boy">
-                          </li>
-                          <li>
-                             <div class="slider_text slider_text_slide2">
-                                  <div class="slider_text_item">
-                                      <span class="slider_text_hit">Хит</span>
-                                      <span class="slider_text_sale">Акция</span>
-                                  </div>
-                                  <h2>Портативная колонка Koralia</h2>
-                                  <span>Комфорт может быть стильным</span>
-                                  <button class="uk-button">Подробнее</button>
-                                  <button class="uk-button"><span uk-icon="cart"></span></button>
-                                  <button class="uk-button"><span uk-icon="heart"></span></button>
-                                  <button class="uk-button"><span uk-icon="more-vertical"></span></button>
-                              </div>
-                              <img src="../tests/assets/images/bird.png"  alt="bird">
-                          </li>
-                          <li><
-                              <div class="slider_text slider_text_slide3">
-                                  <span>Одежда</span>
-                                  <h2>Изящные образы на каждый день</h2>
-                                  <span>Комфорт может быть стильным</span>
-                                  <button class="button_slider">Женская одежда</button>
-                                  <button class="button_slider_3">Аксессуары</button>
-                              </div>
-                              <img src="../tests/assets/images/woman.png"  alt="woman">
-                          </li>
-                      </ul>
-                      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                  </div>
-              </div>
-          </div>
+    <div class="header-bottom">
+        <div class="uk-flex uk-flex-row uk-flex-between uk-flex-middle">
+            <div class="header-bottom__item">
+                <span class="menu-list"><span uk-icon="grid" class="menu-list-icon"></span>Каталог</span>
+                <div uk-dropdown>
+                    <div class="uk-dropdown-grid uk-child-width-1-4" uk-grid>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Электроника</li>
+                                <li><a href="#">Телевизоры</a></li>
+                                <li><a href="#">Аудиотехника</a></li>
+                                <li><a href="#">Игры и приставки</a></li>
+                                <li><a href="#">Телефоны</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Мебель</li>
+                                <li><a href="#">Диваны</a></li>
+                                <li><a href="#">Шкафы</a></li>
+                                <li><a href="#">Столы</a></li>
+                                <li><a href="#">Стулья</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Обувь</li>
+                                <li><a href="#">Мужская обувь</a></li>
+                                <li><a href="#">Женская обувь</a></li>
+                                <li><a href="#">Обувь для мальчиков</a></li>
+                                <li><a href="#">Обувь для девочек</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Одежда</li>
+                                <li><a href="#">Женская одежда</a></li>
+                                <li><a href="#">Мужская одежда</a></li>
+                                <li><a href="#">Одежда для подростков</a></li>
+                                <li><a href="#">Одежда для новорожденных</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Бижутерия и ювелирные изделия</li>
+                                <li><a href="#">Броши</a></li>
+                                <li><a href="#">Серьги</a></li>
+                                <li><a href="#">Браслеты</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Сантехника</li>
+                                <li><a href="#">Ванны</a></li>
+                                <li><a href="#">Душевые кабины</a></li>
+                                <li><a href="#">Смесители</a></li>
+                                <li><a href="#">Унитазы</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Спортивные товары</li>
+                                <li><a href="#">Мячи</a></li>
+                                <li><a href="#">Экипировки</a></li>
+                                <li><a href="#">Гантели</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Освещение</li>
+                                <li><a href="#">Люстры</a></li>
+                                <li><a href="#">Светильники</a></li>
+                                <li><a href="#">Фонари</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Товары для дома и дачи</li>
+                                <li><a href="#">Текстиль</a></li>
+                                <li><a href="#">Декор</a></li>
+                                <li><a href="#">Инвентарь</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Часы</li>
+                                <li><a href="#">Мужские часы</a></li>
+                                <li><a href="#">Женские часы</a></li>
+                                <li><a href="#">Детские часы</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Строительные материалы</li>
+                                <li><a href="#">Обои</a></li>
+                                <li><a href="#">Клеи</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Косметика и парфюмерия</li>
+                                <li><a href="#">Губные помады</a></li>
+                                <li><a href="#">Парфюмерия</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Игрушки</li>
+                                <li><a href="#">Развивающие игрушки</a></li>
+                                <li><a href="#">Мягкие игрушки</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Велосипеды</li>
+                                <li><a href="#">Взрослые велосипеды</a></li>
+                                <li><a href="#">Детские велосипеды</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item-list">
+                            <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header">Климатическая техника</li>
+                                <li><a href="#">Кондиционеры</a></li>
+                                <li><a href="#">Бризеры</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom__item">
+                <span class="menu-list"><span uk-icon="bolt" class="menu-list-icon"></span>Акции</span>
+            </div>
+            <div class="header-bottom__item">
+                <span class="menu-list">Услуги</span>
+                <div class="uk-width-large" uk-dropdown>
+                    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a href="#">Сервисные службы</a></li>
+                                <div class="uk-width-large" uk-dropdown="pos:right">
+                                    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <li><a href="#">Сборка мебели</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Настройка электроники</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Монтаж кондиционеров</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Установка сантехники</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Дополнительные услуги</a></li>
+                                <div class="uk-width-large" uk-dropdown="pos:right">
+                                    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <li><a href="#">Утилизация техники</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="special_goods">
-              <div class="special_goods_item special_goods_item_bike">
-                  <p>Велосипеды</p>
-                  <p>Трехколесный траспорт для начинающих</p>
-              </div>
-              <div class="special_goods_item special_goods_item_watches">
-                  <p>Часы</p>
-                  <p>Деталь стильного образа для мужчин и женщин</p>
-              </div>
-          </div>
-      </div> -->
+            </div>
+            <div class="header-bottom__item "><span class="menu-list">Блог</span></div>
+            <div class="header-bottom__item"><span class="menu-list">Бренды</span></div>
+            <div class="header-bottom__item">
+                <span class="menu-list">Как купить</span>
+                <div class="uk-width-large" uk-dropdown>
+                    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a href="#">Условия оплаты</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Условия доставки</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Гарантия на товар</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom__item">
+                <span class="menu-list">Компания</span>
+                <div class="uk-width-large" uk-dropdown>
+                    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a href="#">О компании</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Новости</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Команда</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Карьера</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Партнеры</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Лицензии</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Документы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom__item"><span class="menu-list">Контакты</span></div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        <div class="slider__item uk-slider-container">
+            <ul class="uk-slider-items uk-width-1-1">
+                <li>
+                    <div class="slide slide_1">
+                        <div class="slide-text-block">
+                            <div class="slide-text-block__item">
+                                <a>Электроника</a>
+                                <h2>Надежная техника</h2>
+                                <span>Смартфоны, игровые приставки, телевизоры</span>
+                            </div>
+                            <div>
+                                <button class="uk-button slide-button">Перейти в каталог</button>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src="../tests/assets/images/boy.png" alt="boy">
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide slide_2">
+                        <div class="slide-text-block">
+                            <div class="slide-text-block__item">
+                                <div class="stock">
+                                    <span class="hit">Хит</span>
+                                    <span class="sale">Акция</span>
+                                </div>
+                                <h2>Портативная колонка Koralia</h2>
+                                <span>Комфорт может быть стильным</span>
+                            </div>
+                            <div>
+                                <button class="uk-button slide-button">Подробнее</button>
+                                <button class="uk-button slide-button slider-button_m"><span uk-icon="cart"></span>
+                                </button>
+                                <button class="uk-button slide-button slider-button_m"><span uk-icon="heart"></span>
+                                </button>
+                                <button class="uk-button slide-button slider-button_m"><span
+                                        uk-icon="more-vertical"></span></button>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src="../tests/assets/images/bird.png" alt="bird">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide slide_3">
+                        <div class="slide-text-block">
+                            <div class="slide-text-block__item">
+                                <a>Одежда</a>
+                                <h2>Изящные образы на каждый день</h2>
+                                <span>Комфорт может быть стильным</span>
+                            </div>
+                            <div>
+                                <button class="uk-button slide-button">Женская одежда</button>
+                                <button class="uk-button slide-button slider-button_m">Аксессуары</button>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src="../tests/assets/images/woman.png" alt="woman">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+               uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+               uk-slider-item="next"></a>
+            <div class="uk-position-bottom-center uk-position-small">
+                <ul class="uk-dotnav">
+                    <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                    <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                    <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="special-goods">
+        <div class="special-goods__item bike">
+            <div class="special-goods-promo">
+                <a>Велосипеды</a>
+                <p>Трехколесный траспорт для начинающих гонщиков</p>
+            </div>
+        </div>
+        <div class="special-goods__item watches">
+            <div class="special-goods-promo">
+                <a>Часы</a>
+                <p>Деталь стильного образа для мужчин и женщин</p>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
