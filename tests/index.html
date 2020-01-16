@@ -75,7 +75,7 @@
         <div class="uk-flex uk-flex-row uk-flex-between uk-flex-middle">
             <div class="header-bottom__item">
                 <span class="menu-list"><span uk-icon="grid" class="menu-list-icon"></span>Каталог</span>
-                <div uk-dropdown>
+                <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
                     <div class="uk-dropdown-grid uk-child-width-1-4" uk-grid>
                         <div class="menu-item-list">
                             <span uk-icon="icon:  desktop; ratio: 2" class="menu-item-list__icon"></span>
@@ -310,7 +310,7 @@
         </div>
     </div>
 </div>
-<div class="content">
+<div class="main-slider">
     <div class="slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
         <div class="slider__item uk-slider-container">
             <ul class="uk-slider-items uk-width-1-1">
@@ -430,16 +430,20 @@
         </div>
     </div>
     <div class="special-goods">
-        <div class="special-goods__item bike">
-            <div class="special-goods-promo">
-                <a>Велосипеды</a>
-                <p>Трехколесный траспорт для начинающих гонщиков</p>
+        <div class="special-goods__item-wrap">
+            <div class="special-goods__item bike">
+                <div class="special-goods-promo">
+                    <a>Велосипеды</a>
+                    <p>Трехколесный траспорт для начинающих гонщиков</p>
+                </div>
             </div>
         </div>
-        <div class="special-goods__item watches">
-            <div class="special-goods-promo">
-                <a>Часы</a>
-                <p>Деталь стильного образа для мужчин и женщин</p>
+        <div class="special-goods__item-wrap">
+            <div class="special-goods__item watches">
+                <div class="special-goods-promo">
+                    <a>Часы</a>
+                    <p>Деталь стильного образа для мужчин и женщин</p>
+                </div>
             </div>
         </div>
     </div>
